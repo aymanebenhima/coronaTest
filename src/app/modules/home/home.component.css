@@ -322,3 +322,16 @@
     font-size: 24px;
   }
 }
+
+
+@media (min-width: 300px) and (max-width : 410px)
+{
+ 
+  
+  #hero-text-container p {
+   
+    font-size:15px;
+  }
+  
+
+}
