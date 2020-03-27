@@ -1,0 +1,109 @@
+{
+    "title": "Maladie Coronavirus - Testez vos symptômes de Coronavirus COVID-19",
+
+    "menuHome": "Accueil",
+    "menuAdvice": "Conseils",
+
+    "headerTitle": "LA DERNIÈRE INFO MÉDICALE",
+    "headerContent1": "La prise d'anti-inflammatoires (ibuprofène, cortisone ...) pourrait être un facteur d'aggravation de l’infection. En cas de fièvre, prenez du paracétamol.",
+    "headerContent2": "N'arrêtez pas votre traitement ! Consultez votre médecin ou votre pharmacien.",
+
+    "homeTitle1": "Vous pensez avoir été exposé au Coronavirus COVID-19 et avez des symptômes ?",
+    "homeContent1": "Je reste vigilant ?",
+    "homeContent2": "Je programme une téléconsultation ?",
+    "homeContent3": "J'appelle le 141 ?",
+    "homeContent4": "Faites le test pour répondre en citoyen éclairé selon vos symptômes.",
+
+    "startTest": "Démarrer le test",
+
+    "homeTitle2": "Quels sont les symptômes à surveiller ?",
+    "homeIcon1": "Fièvre",
+    "homeIcon2": "Nausées et vomissements",
+    "homeIcon3": "Gêne respiratoire",
+    "homeIcon4": "Toux et maux de gorge",
+
+
+    "homeTitle3": "Recommandations officielles",
+    "homeCall": "Appelez",
+    "homeTitle4": "Si vous pensez être malade, nous vous conseillons de",
+    "homeSubP1": "Evitez les endroits publics.",
+    "homeSubP2": "Ne rendez pas visite aux personnes fragiles.",
+    "homeSubP3": "Restez chez vous.",
+    "homeSubP4": "Respectez les mesures barrière (lavage de main, masque).",
+    "homeSubP5": "Surveillez vos symptômes, l’évolution de votre température corporelle et recherchez un avis médical.",
+    "homeTitle5": "Vous pensez avoir été exposé au Coronavirus COVID-19 et avez des symptômes ?",
+
+
+    "footerTitle": "Contacts utiles",
+    "footerCall1": "Numéro économique \"Allo veille épidémiologique\"",
+    "footerCall2": "Aide médicale urgente",
+
+
+    "adviceTitle1": "Comment se protéger et protéger les autres au quotidien ?",
+    "adviceIcon1": "Saluez sans serrer la main, n'embrassez personne",
+    "adviceIcon2": "Lavez-vous très régulièrement les mains",
+    "adviceIcon3": "Portez un masque si vous êtes malade",
+    "adviceIcon4": "Toussez ou éternuez dans votre coude ou dans un mouchoir",
+    "adviceIcon5": "Utilisez un mouchoir à usage unique et jetez-le",
+    "adviceIcon6": "Désinfection de votre emplacement",
+    "adviceIcon7": "Restez chez vous, évitez tout contact avec les autres",
+
+    
+    "infos": "Informations",
+    "adviceSentence": "Obtenez des informations à jour en provenance de la Ministère de la Santé",
+    "adviceBtn": "Informations utiles",
+
+    "error404":"Oopps! La page que vous recherchez n'existe pas.",
+    "error404_btn": "Aller à la page d'accueil",
+    
+    "preambule": "Préambule",
+    "preambuleContent1": "L’application est fournie à titre gratuit, en l’état, uniquement à des fins d’information pour contribuer à fluidifier la prise en charge des personnes par les services d’urgences pendant l’épidémie de Coronavirus COVID-19. L’exhaustivité, l’exactitude, le caractère à jour des informations et contenus mis à disposition dans cette application, ou leur adéquation à des finalités particulières, ne sont pas garantis.",
+    "preambuleContent2": ">Cette application ne substitue pas votre médecin ou votre pharmacien consultant qui sont plus aptes à vous donner plus de précision, ce qui vous amène à prendre conseils auprès d'un médecin.",
+    "preambuleContent3": "Les informations de cette application est le premier niveau de la détection des cas possibles du COVID-19.",
+    
+    "Quiz": "Questionnaire",
+    "Results": "Résultats",
+    "RestartQuiz": "Recommencer le test",
+
+    "yes": "Oui",
+    "no": "Non",
+
+    "previous": "Précédent",
+    "next": "Suivant",
+    "Finished": "Le test est terminé",
+
+    "deg": "degrés",
+    "cm": "cm",
+    "year": "ans",
+    "man": "Homme",
+    "kg": "kg",
+
+    "bien": "Bien",
+    "assezBien": "Assez bien",
+    "fatigue": "Fatigué(e)",
+    "tresFatigue": "Très fatigué(e)",
+
+    "qst1": "Pensez-vous avoir ou avoir eu de la fièvre ces derniers jours (frissons, sueurs) ?",
+    "qst2": "Quelle est votre température corporelle ?",
+    "qst3": "Ces derniers jours, avez-vous une toux ou une augmentation de votre toux habituelle ?",
+    "qst4": "Avez vous eu des courbatures inhabituelles au cours des dernièrs jours ?",
+    "qst5": "Ces derniers jours, avez-vous un mal de gorge ?",
+    "qst6": "Ces dernières 24 heures, avez-vous de la diarrhée ? Avec au moins 3 selles molles.",
+    "qst7": "Ces derniers jours, avez-vous une fatigue inhabituelle ?",
+    "qst8": "Êtes vous dans l'impossibilité de vous alimenter ou de boire DEPUIS 24 HEURES OU PLUS ?",
+    "qst9": "Dans les dernières 24 heures, avez-vous noté un manque de souffle INHABITUEL lorsque vous parlez ou faites un petit effort ?",
+    "qst10": "Actuellement, comment vous vous sentez ?",
+    "qst11": "Quel est votre âge ? Ceci, afin de calculer un facteur de risque spécifique.",
+    "qst12": "Quel est votre poids ? Afin de calculer l’indice de masse corporelle qui est un facteur influençant le risque de complications de l’infection.",
+    "qst13": "Quel est votre taille ? Afin de calculer l’indice de masse corporelle qui est un facteur influençant le risque de complications de l’infection.",
+    "qst14": "Avez-vous de l’hypertension artérielle mal équilibrée ? Ou avez-vous une maladie cardiaque ou vasculaire ? Ou prenez vous un traitement à visée cardiologique ?",
+    "qst15": "Êtes-vous diabétique ?",
+    "qst16": "Avez-vous ou avez-vous eu un cancer ?",
+    "qst17": "Avez-vous une maladie respiratoire ? Ou êtes-vous suivi par un pneumologue ?",
+    "qst18": "Avez-vous une insuffisance rénale chronique dialysée ?",
+    "qst19": "Avez-vous une maladie chronique du foie ?",
+    "qst20": "Êtes-vous enceinte ?",
+    "qst21": "Avez-vous une maladie connue pour diminuer vos défenses immunitaires ?",
+    "qst22": "Prenez-vous un traitement immunosuppresseur ? C’est un traitement qui diminue vos défenses contre les infections. Voici quelques exemples : corticoïdes, méthotrexate, ciclosporine, tacrolimus, azathioprine, cyclophosphamide (liste non exhaustive)."
+    
+}

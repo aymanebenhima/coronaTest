@@ -1,0 +1,322 @@
+* {
+  font-family: 'Cairo', sans-serif !important;
+}
+
+#medical-news {
+  width: 100%;
+  background-color: #F4CF1B;
+  padding: 20px;
+  margin-bottom: 50px;
+}
+
+/* #medical-news div {
+    width: 40%;
+    text-align: center;
+    font-family: 'Cairo', sans-serif;
+} */
+
+#medical-news h2 {
+  color: #1078AD;
+  font-size: 28px;
+  font-weight: 700;
+  text-align: center;
+}
+
+#medical-news p {
+  font-size: 16px;
+  font-weight: 500;
+  text-align: justify;
+  text-align-last: center;
+}
+
+/* ************* */
+
+@media (min-width: 1200px) {
+  .section-container {
+    max-width: 89vw;
+  }
+}
+
+#hero {
+  margin-bottom: 70px;
+}
+
+#hero-container {
+  align-items: center;
+}
+
+#hero-illustration {
+  width: 44vw;
+  /* position: relative;
+    right: 5vw; */
+}
+
+#hero-text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#hero-text-container h2 {
+  width: 100%;
+  font-size: 26px;
+  font-weight: 900;
+  text-align: justify;
+  text-align-last: center;
+  color: #1078AD;
+  margin-bottom: 30px;
+}
+
+#emoji {
+  width: 58px;
+  height: auto;
+  margin-bottom: 30px;
+}
+
+#hero-text-container p {
+  width: 100%;
+  font-size: 24px;
+  font-weight: 700;
+  text-align: right;
+  color: #7F7F7F;
+  line-height: 35px;
+  margin-bottom: 30px;
+}
+
+#hero-text-container button {
+  width: 100%;
+  font-size: 22px;
+  font-weight: 700;
+  text-align: right;
+  color: #1078AD;
+  background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url("~/assets/imgs/button-bg.png");
+  border: 2px solid #1078AD;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  text-align: center;
+  transition: .2s cubic-bezier();
+}
+
+#hero-text-container button:hover {
+  background: linear-gradient(rgba(16, 121, 173, 0.9), rgba(16, 121, 173, 0.9)), url("~/assets/imgs/button-bg.png");
+  color: aliceblue;
+}
+
+@media (max-width: 575.98px) {
+
+  #hero-illustration {
+    width: 90vw;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  #hero-text-container h2 {
+    overflow: hidden;
+    text-align: center;
+  }
+
+  #hero-text-container p {
+    text-align: center;
+    overflow: hidden;
+  }
+
+  #hero-illustration {
+    margin-bottom: 20px;
+  }
+}
+
+/* ***************** */
+
+#symptoms {
+  margin-bottom: 70px;
+}
+
+#symptoms-title {
+  text-align: center;
+  font: Bold 35px/39px Cairo;
+  letter-spacing: 0;
+  color: #1078AD;
+  margin-bottom: 40px;
+}
+
+.symptom-card {
+  text-align: center;
+  padding: 30px;
+}
+
+.symptom-card img {
+  width: auto;
+  height: 20vh;
+  margin-bottom: 25px;
+}
+
+.symptom-card h5 {
+  font-size: 25px;
+  font-weight: 700;
+  letter-spacing: 0;
+  color: #1078AD;
+}
+
+@media (max-width: 575.98px) {
+  .symptom-card h5 {
+    font-size: 17px;
+  }
+
+  .symptom-card img {
+    height: 10vw;
+    width: auto;
+  }
+
+  #symptoms-title {
+    font-size: 30px;
+  }
+}
+
+/* ******************** */
+
+#recommandations {
+  background-color: #1078AD;
+  padding-bottom: 30px;
+}
+
+#recommandations-title {
+  margin-top: 30px;
+  text-align: center;
+  font: Bold 30px/35px Cairo;
+  letter-spacing: 0;
+  color: #fff;
+  margin-bottom: 40px;
+}
+
+#recomm-items p {
+  font-size: 20px;
+  font-weight: 700;
+  text-align: right;
+  color: #fff;
+}
+
+#recomm-items ul {
+  margin-top: 20px;
+}
+
+#recomm-items ul li {
+  font-size: 19px;
+  font-weight: 500;
+  text-align: right;
+  color: #fff;
+  padding-bottom: 10px;
+  list-style: none;
+}
+
+#recomm-items ul li::before {
+  content: "\26A0";
+  color: #F4CF1B;
+  font-weight: bold;
+  display: inline-block;
+  width: 1.5em;
+}
+
+#recomm-contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#recomm-contacts h5 {
+  color: #F4CF1B;
+  font-size: 25px;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+#recomm-contacts span {
+  background-color: #F4CF1B;
+  width: 200px;
+  color: #1078AD;
+  font-size: 25px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+#recomm-contacts p a {
+  color: #fff;
+  font-size: 22px;
+  font-weight: 500;
+  border-bottom: 1px solid #F4CF1B;
+}
+
+@media (max-width: 575.98px) {
+  #recomm-contacts {
+    order: 2;
+  }
+
+  #recommandations-title {
+    font: Bold 25px/30px Cairo;
+  }
+
+  #recomm-items p {
+    font-size: 15px;
+  }
+
+  #recomm-items ul li {
+    font-size: 14px;
+  }
+
+  #recomm-items ul {
+    font-size: 14px;
+    padding-right: 10px;
+  }
+}
+
+/* ************ */
+
+#rappel-test {
+  background-color: #96C5DC;
+}
+
+#rappel-container {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#rappel-container h2 {
+  text-align: center;
+  font-size: 26px;
+  font-weight: 700;
+  color: #1078AD;
+}
+
+#rappel-container button {
+  width: 30vw;
+  font-size: 22px;
+  font-weight: 700;
+  color: #1078AD;
+  background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url("~/assets/imgs/button-bg.png");
+  border: 2px solid #1078AD;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  text-align: center;
+  transition: .2s cubic-bezier();
+}
+
+#rappel-container button:hover {
+  background: linear-gradient(rgba(16, 121, 173, 0.9), rgba(16, 121, 173, 0.9)), url("~/assets/imgs/button-bg.png");
+  color: aliceblue;
+}
+
+@media (max-width: 575.98px) {
+  #rappel-container button {
+    width: 100%;
+  }
+
+  #rappel-container h2 {
+    font-size: 24px;
+  }
+}

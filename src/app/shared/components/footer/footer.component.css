@@ -1,0 +1,142 @@
+@media (min-width: 1200px) {
+  .section-container {
+    max-width: 89vw;
+  }
+}
+
+* {
+  font-family: 'Cairo', sans-serif;
+}
+
+footer {
+    padding-bottom: 1.25em;
+}
+
+#footer-logo-container {
+  margin-top: 1.25em;
+  margin-bottom: 1.25em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#footer-logo-sante {
+  width: 70px;
+  height: auto;
+}
+
+#footer-links {
+  text-align: center;
+}
+
+#footer-links li {
+    border-bottom: 1px solid rgba(16, 121, 173, 0.5) !important;
+  }
+
+#footer-links li:hover a {
+  color: #1078AD;
+  text-decoration: none;
+}
+
+#footer-links li a {
+  color: #2B2B2C;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.list-group-item.active {
+  border-color: inherit !important;
+}
+
+.active {
+  background-color: transparent;
+}
+
+.active a {
+  color: #1078AD !important;
+  font-weight: 700 !important;
+}
+
+#footer-lang-btn {
+  color: #1078AD;
+  font-family: 'Cairo', sans-serif;
+  border: 1.2px solid #1078AD;
+  transition: .2s;
+  font-weight: 700;
+}
+
+#footer-lang-btn:hover {
+  color: #fff;
+  font-family: 'Cairo', sans-serif;
+  border: 1.2px solid #1078AD;
+  background: #1078AD;
+}
+
+/* *********** */
+
+#footer-contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+}
+
+#footer-contacts h2 {
+    font-family: 'Cairo', sans-serif;
+    font-size: 1.5em;
+    font-weight: 700;
+    color: #1078AD;
+}
+
+
+
+#footer-contacts h5 {
+    font-family: 'Cairo', sans-serif;
+    font-size: 1.5em;
+    font-weight: 700;
+    color: #369D53;
+}
+
+#footer-contacts p {
+    font-family: 'Cairo', sans-serif;
+    font-size: 1em;
+    font-weight: 700;
+    color: #2B2B2C;
+}
+
+/* ********** */
+
+
+@media (max-width: 575.98px) {
+
+  #footer-contacts {
+    line-height: 1.4;
+  }
+
+  #footer-contacts h2 {
+      font-size: 1.3em;
+      font-weight: 900;
+  }
+
+    #footer-contacts p {
+        font-size: 0.8em;
+        text-align: center;
+    }
+
+    #footer-contacts h5 {
+      font-size: 1em;
+    }
+
+    #footer-lang-btn {
+      font-size: 0.75em;
+    }
+}
+
+/* ************ */
+
+#bottom-line {
+    width: 100%;
+    height: 35px;
+    background-color: #1078AD;
+}

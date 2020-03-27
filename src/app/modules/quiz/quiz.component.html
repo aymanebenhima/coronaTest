@@ -1,0 +1,56 @@
+<section id="quiz-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-12" dir="rtl">
+        <mat-horizontal-stepper labelPosition="bottom" #bigStepper>
+          <mat-step>
+            <ng-template matStepLabel>
+              <h5 class="step-label">{{'infos' | translate}}</h5>
+            </ng-template>
+            <!-- first step content -->
+            <div class="jumbotron" dir="rtl">
+              <h5 id="infos-title">{{'preambule' | translate}}</h5>
+              <p class="infos-paragraph">{{'preambuleContent1' | translate}}</p>
+              <hr class="my-4">
+              <p class="infos-paragraph">{{'preambuleContent2' | translate}}<br>{{'preambuleContent3' | translate}}</p>
+
+            </div>
+            <div class="d-flex justify-content-center">
+              <button id="step-next-btn" class="btn btn-lg" mat-button matStepperNext dir="rtl">{{'startTest' | translate}}</button>
+            </div>
+            <!-- end first step -->
+          </mat-step>
+          <mat-step>
+            <ng-template matStepLabel>
+              <h5 class="step-label">{{'Quiz' | translate}}</h5>
+            </ng-template>
+            <!-- second step content -->
+            
+                <app-multiple-steps-form (nextEvent)="nextClicked()"></app-multiple-steps-form>
+              
+            <!-- end second step -->
+          </mat-step>
+          <mat-step>
+            <ng-template matStepLabel>
+              <h5 class="step-label">{{'Results' | translate}}</h5>
+            </ng-template>
+            <!-- third step content -->
+            <div class="jumbotron" dir="rtl">
+              <h5 id="infos-title">{{'Results' | translate}}</h5>
+              <p class="result-paragraph" id="result" style="white-space: pre-line;" [ngClass]="{'dng': resultat == 'خصك تعيط ل 141'}">{{resultat}}</p>
+              <hr class="my-4">
+              <p class="result-paragraph" id="conseil">{{message}}</p>
+
+            </div>
+            <div class="d-flex justify-content-center">
+              <button id="step-next-btn" class="btn btn-lg"  dir="rtl" (click)="restart()">{{'RestartQuiz' | translate}}</button>
+            </div>
+            <!-- end third step -->
+          </mat-step>
+        </mat-horizontal-stepper>
+      </div>
+    </div>
+  </div>
+</section>
+
+<button #nextButton class="d-none" (click)="goNext(bigStepper)"></button>

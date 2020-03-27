@@ -1,0 +1,785 @@
+<div class="card">
+  <div class="card-header d-flex align-items-center" id="formProgressBar">
+    <span>{{stepper.selectedIndex + 1}}/{{totalStepsCount}}</span>
+    <mat-progress-bar id="formProgressBar" mode="determinate" [value]="progressBarValue"></mat-progress-bar>
+  </div>
+  <div class="card-body">
+    <mat-horizontal-stepper linear id="formStepper" #stepper>
+      <mat-step [stepControl]="feverFormGroup" editable>
+        <form [formGroup]="feverFormGroup">
+          <h4 class="question mt-5">{{'qst1' | translate}}</h4>
+          <div class="container mt-5">
+            <div class="row justify-content-center mt-5">
+              <div class="col-lg-8 col-sm-12 container">
+                <div class="row justify-content-around">
+                  <div class="col-lg-6 col-sm-12 d-flex justify-content-between answer-radio">
+                    <input type="radio" id="radio1" [value]="true" name="fever" formControlName="fever">
+                    <label for="radio1">
+                      <i class="fas fa-check"></i>
+                      <span>{{'yes' | translate}}</span>
+                    </label>
+                    <input type="radio" id="radio2" [value]="false" name="fever" formControlName="fever">
+                    <label for="radio2">
+                      <i class="fas fa-times"></i>
+                      <span>{{'no' | translate}}</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row justify-content-between justify-content-sm-center mt-5">
+              <div class="col-4 d-flex justify-content-sm-start justify-content-end mt-5">
+                <button class="btn btn-form" (click)="goBack(stepper)" [hidden]="stepper.selectedIndex === 0">{{'previous' | translate}}</button>
+              </div>
+              <div class="col-4 d-flex justify-content-sm-end justify-content-start mt-5">
+                <button class="btn btn-form" (click)="goForward(stepper)"
+                  [hidden]="stepper.selectedIndex === totalStepsCount-1" [disabled]="!feverFormGroup.valid">{{'next' | translate}}</button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </mat-step>
+      <mat-step [stepControl]="feverDegreeFormGroup" editable>
+        <form [formGroup]="feverDegreeFormGroup">
+          <h4 class="question mt-5">{{'qst2' | translate}}</h4>
+          <div class="container mt-5">
+            <div class="row justify-content-center mt-5">
+              <div class="col-lg-8 col-sm-12 container">
+                <div class="row justify-content-around">
+                  <div class="col-lg-12 col-sm-12 d-flex justify-content-between answer-radio">
+                    <div class="input-group">
+                      <input id="fever-input" type="number" class="form-control myInput" placeholder="34 - 42" min="34" max="42"
+                        formControlName="feverDegree">
+                      <div class="input-group-append">
+                        <span class="input-group-text myAddon" id="fever-addon">{{'deg' | translate}}</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row justify-content-between justify-content-sm-center mt-5">
+              <div class="col-4 d-flex justify-content-sm-start justify-content-end mt-5">
+                <button class="btn btn-form" (click)="goBack(stepper)" [hidden]="stepper.selectedIndex === 0">{{'previous' | translate}}</button>
+              </div>
+              <div class="col-4 d-flex justify-content-sm-end justify-content-start mt-5">
+                <button class="btn btn-form" (click)="goForward(stepper)"
+                  [hidden]="stepper.selectedIndex === totalStepsCount-1" [disabled]="!feverDegreeFormGroup.valid">{{'next' | translate}}</button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </mat-step>
+      <mat-step [stepControl]="coughFormGroup" editable>
+        <form [formGroup]="coughFormGroup">
+          <h4 class="question mt-5">{{'qst3' | translate}}</h4>
+          <div class="container mt-5">
+            <div class="row justify-content-center mt-5">
+              <div class="col-lg-8 col-sm-12 container">
+                <div class="row justify-content-around">
+                  <div class="col-lg-6 col-sm-12 d-flex justify-content-between answer-radio">
+                    <input type="radio" id="radio3" [value]="true" name="cough" formControlName="cough">
+                    <label for="radio3">
+                      <i class="fas fa-check"></i>
+                      <span>{{'yes' | translate}}</span>
+                    </label>
+                    <input type="radio" id="radio4" [value]="false" name="cough" formControlName="cough">
+                    <label for="radio4">
+                      <i class="fas fa-times"></i>
+                      <span>{{'no' | translate}}</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row justify-content-between justify-content-sm-center mt-5">
+              <div class="col-4 d-flex justify-content-sm-start justify-content-end mt-5">
+                <button class="btn btn-form" (click)="goBack(stepper)" [hidden]="stepper.selectedIndex === 0">{{'previous' | translate}}</button>
+              </div>
+              <div class="col-4 d-flex justify-content-sm-end justify-content-start mt-5">
+                <button class="btn btn-form" (click)="goForward(stepper)"
+                  [hidden]="stepper.selectedIndex === totalStepsCount-1" [disabled]="!coughFormGroup.valid">{{'next' | translate}}</button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </mat-step>
+      <mat-step [stepControl]="muscularPainFormGroup" editable>
+        <form [formGroup]="muscularPainFormGroup">
+          <h4 class="question mt-5">{{'qst4' | translate}}</h4>
+          <div class="container mt-5">
+            <div class="row justify-content-center mt-5">
+              <div class="col-lg-8 col-sm-12 container">
+                <div class="row justify-content-around">
+                  <div class="col-lg-6 col-sm-12 d-flex justify-content-between answer-radio">
+                    <input type="radio" id="radio5" [value]="true" name="muscularPain" formControlName="muscularPain">
+                    <label for="radio5">
+                      <i class="fas fa-check"></i>
+                      <span>{{'yes' | translate}}</span>
+                    </label>
+                    <input type="radio" id="radio6" [value]="false" name="muscularPain" formControlName="muscularPain">
+                    <label for="radio6">
+                      <i class="fas fa-times"></i>
+                      <span>{{'no' | translate}}</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row justify-content-between justify-content-sm-center mt-5">
+              <div class="col-4 d-flex justify-content-sm-start justify-content-end mt-5">
+                <button class="btn btn-form" (click)="goBack(stepper)" [hidden]="stepper.selectedIndex === 0">{{'previous' | translate}}</button>
+              </div>
+              <div class="col-4 d-flex justify-content-sm-end justify-content-start mt-5">
+                <button class="btn btn-form" (click)="goForward(stepper)"
+                  [hidden]="stepper.selectedIndex === totalStepsCount-1"
+                  [disabled]="!muscularPainFormGroup.valid">{{'next' | translate}}</button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </mat-step>
+      <mat-step [stepControl]="soreThroatFormGroup" editable>
+        <form [formGroup]="soreThroatFormGroup">
+          <h4 class="question mt-5">{{'qst5' | translate}}</h4>
+          <div class="container mt-5">
+            <div class="row justify-content-center mt-5">
+              <div class="col-lg-8 col-sm-12 container">
+                <div class="row justify-content-around">
+                  <div class="col-lg-6 col-sm-12 d-flex justify-content-between answer-radio">
+                    <input type="radio" id="radio7" [value]="true" name="soreThroat" formControlName="soreThroat">
+                    <label for="radio7">
+                      <i class="fas fa-check"></i>
+                      <span>{{'yes' | translate}}</span>
+                    </label>
+                    <input type="radio" id="radio8" [value]="false" name="soreThroat" formControlName="soreThroat">
+                    <label for="radio8">
+                      <i class="fas fa-times"></i>
+                      <span>{{'no' | translate}}</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row justify-content-between justify-content-sm-center mt-5">
+              <div class="col-4 d-flex justify-content-sm-start justify-content-end mt-5">
+                <button class="btn btn-form" (click)="goBack(stepper)" [hidden]="stepper.selectedIndex === 0">{{'previous' | translate}}</button>
+              </div>
+              <div class="col-4 d-flex justify-content-sm-end justify-content-start mt-5">
+                <button class="btn btn-form" (click)="goForward(stepper)"
+                  [hidden]="stepper.selectedIndex === totalStepsCount-1" [disabled]="!soreThroatFormGroup.valid">{{'next' | translate}}</button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </mat-step>
+      <mat-step [stepControl]="diarrheaFormGroup" editable>
+        <form [formGroup]="diarrheaFormGroup">
+          <h4 class="question mt-5">{{'qst6' | translate}}</h4>
+          <div class="container mt-5">
+            <div class="row justify-content-center mt-5">
+              <div class="col-lg-8 col-sm-12 container">
+                <div class="row justify-content-around">
+                  <div class="col-lg-6 col-sm-12 d-flex justify-content-between answer-radio">
+                    <input type="radio" id="radio9" [value]="true" name="diarrhea" formControlName="diarrhea">
+                    <label for="radio9">
+                      <i class="fas fa-check"></i>
+                      <span>{{'yes' | translate}}</span>
+                    </label>
+                    <input type="radio" id="radio10" [value]="false" name="diarrhea" formControlName="diarrhea">
+                    <label for="radio10">
+                      <i class="fas fa-times"></i>
+                      <span>{{'no' | translate}}</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row justify-content-between justify-content-sm-center mt-5">
+              <div class="col-4 d-flex justify-content-sm-start justify-content-end mt-5">
+                <button class="btn btn-form" (click)="goBack(stepper)" [hidden]="stepper.selectedIndex === 0">{{'previous' | translate}}</button>
+              </div>
+              <div class="col-4 d-flex justify-content-sm-end justify-content-start mt-5">
+                <button class="btn btn-form" (click)="goForward(stepper)"
+                  [hidden]="stepper.selectedIndex === totalStepsCount-1" [disabled]="!diarrheaFormGroup.valid">{{'next' | translate}}</button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </mat-step>
+      <mat-step [stepControl]="tirednessFormGroup" editable>
+        <form [formGroup]="tirednessFormGroup">
+          <h4 class="question mt-5">{{'qst7' | translate}}</h4>
+          <div class="container mt-5">
+            <div class="row justify-content-center mt-5">
+              <div class="col-lg-8 col-sm-12 container">
+                <div class="row justify-content-around">
+                  <div class="col-lg-6 col-sm-12 d-flex justify-content-between answer-radio">
+                    <input type="radio" id="radio11" [value]="true" name="tiredness" formControlName="tiredness">
+                    <label for="radio11">
+                      <i class="fas fa-check"></i>
+                      <span>{{'yes' | translate}}</span>
+                    </label>
+                    <input type="radio" id="radio12" [value]="false" name="tiredness" formControlName="tiredness">
+                    <label for="radio12">
+                      <i class="fas fa-times"></i>
+                      <span>{{'no' | translate}}</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row justify-content-between justify-content-sm-center mt-5">
+              <div class="col-4 d-flex justify-content-sm-start justify-content-end mt-5">
+                <button class="btn btn-form" (click)="goBack(stepper)" [hidden]="stepper.selectedIndex === 0">{{'previous' | translate}}</button>
+              </div>
+              <div class="col-4 d-flex justify-content-sm-end justify-content-start mt-5">
+                <button class="btn btn-form" (click)="goForward(stepper)"
+                  [hidden]="stepper.selectedIndex === totalStepsCount-1" [disabled]="!tirednessFormGroup.valid">{{'next' | translate}}</button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </mat-step>
+      <mat-step [stepControl]="dyspneaFormGroup" editable>
+        <form [formGroup]="dyspneaFormGroup">
+          <h4 class="question mt-5">{{'qst8' | translate}}</h4>
+          <div class="container mt-5">
+            <div class="row justify-content-center mt-5">
+              <div class="col-lg-8 col-sm-12 container">
+                <div class="row justify-content-around">
+                  <div class="col-lg-6 col-sm-12 d-flex justify-content-between answer-radio">
+                    <input type="radio" id="radio13" [value]="true" name="dyspnea" formControlName="dyspnea">
+                    <label for="radio13">
+                      <i class="fas fa-check"></i>
+                      <span>{{'yes' | translate}}</span>
+                    </label>
+                    <input type="radio" id="radio14" [value]="false" name="dyspnea" formControlName="dyspnea">
+                    <label for="radio14">
+                      <i class="fas fa-times"></i>
+                      <span>{{'no' | translate}}</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row justify-content-between justify-content-sm-center mt-5">
+              <div class="col-4 d-flex justify-content-sm-start justify-content-end mt-5">
+                <button class="btn btn-form" (click)="goBack(stepper)" [hidden]="stepper.selectedIndex === 0">{{'previous' | translate}}</button>
+              </div>
+              <div class="col-4 d-flex justify-content-sm-end justify-content-start mt-5">
+                <button class="btn btn-form" (click)="goForward(stepper)"
+                  [hidden]="stepper.selectedIndex === totalStepsCount-1" [disabled]="!dyspneaFormGroup.valid">{{'next' | translate}}</button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </mat-step>
+      <mat-step [stepControl]="anorexiaFormGroup" editable>
+        <form [formGroup]="anorexiaFormGroup">
+          <h4 class="question mt-5">{{'qst9' | translate}}</h4>
+          <div class="container mt-5">
+            <div class="row justify-content-center mt-5">
+              <div class="col-lg-8 col-sm-12 container">
+                <div class="row justify-content-around">
+                  <div class="col-lg-6 col-sm-12 d-flex justify-content-between answer-radio">
+                    <input type="radio" id="radio15" [value]="true" name="anorexia" formControlName="anorexia">
+                    <label for="radio15">
+                      <i class="fas fa-check"></i>
+                      <span>{{'yes' | translate}}</span>
+                    </label>
+                    <input type="radio" id="radio16" [value]="false" name="anorexia" formControlName="anorexia">
+                    <label for="radio16">
+                      <i class="fas fa-times"></i>
+                      <span>{{'no' | translate}}</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row justify-content-between justify-content-sm-center mt-5">
+              <div class="col-4 d-flex justify-content-sm-start justify-content-end mt-5">
+                <button class="btn btn-form" (click)="goBack(stepper)" [hidden]="stepper.selectedIndex === 0">{{'previous' | translate}}</button>
+              </div>
+              <div class="col-4 d-flex justify-content-sm-end justify-content-start mt-5">
+                <button class="btn btn-form" (click)="goForward(stepper)"
+                  [hidden]="stepper.selectedIndex === totalStepsCount-1" [disabled]="!anorexiaFormGroup.valid">{{'next' | translate}}</button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </mat-step>
+      <mat-step [stepControl]="discomfortFormGroup" editable>
+        <form [formGroup]="discomfortFormGroup">
+          <h4 class="question mt-5">{{'qst10' | translate}}</h4>
+          <div class="container mt-5">
+            <div class="row justify-content-center mt-5">
+              <div class="col-lg-8 col-sm-12 container">
+                <div class="row justify-content-around">
+                  <div class="col-lg-6 col-sm-12 d-flex justify-content-between answer-radio">
+                    <input type="radio" id="radio17" value="B" name="discomfort" formControlName="discomfort">
+                    <label for="radio17">
+                      <i class="far fa-laugh"></i>
+                      <span>{{'bien' | translate}}</span>
+                    </label>
+                    <input type="radio" id="radio18" value="AB" name="discomfort" formControlName="discomfort">
+                    <label for="radio18">
+                      <i class="far fa-smile-beam"></i>
+                      <span>{{'assezBien' | translate}}</span>
+                    </label>
+                  </div>
+                  <div class="col-lg-6 col-sm-12 d-flex justify-content-between answer-radio">
+                    <input type="radio" id="radio19" value="M" name="discomfort" formControlName="discomfort">
+                    <label for="radio19">
+                      <i class="far fa-frown"></i>
+                      <span>{{'fatigue' | translate}}</span>
+                    </label>
+                    <input type="radio" id="radio20" value="TM" name="discomfort" formControlName="discomfort">
+                    <label for="radio20">
+                      <i class="far fa-dizzy"></i>
+                      <span>{{'tresFatigue' | translate}}</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row justify-content-between justify-content-sm-center mt-5">
+              <div class="col-4 d-flex justify-content-sm-start justify-content-end mt-5">
+                <button class="btn btn-form" (click)="goBack(stepper)" [hidden]="stepper.selectedIndex === 0">{{'previous' | translate}}</button>
+              </div>
+              <div class="col-4 d-flex justify-content-sm-end justify-content-start mt-5">
+                <button class="btn btn-form" (click)="goForward(stepper)"
+                  [hidden]="stepper.selectedIndex === totalStepsCount-1" [disabled]="!discomfortFormGroup.valid">{{'next' | translate}}</button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </mat-step>
+      <mat-step [stepControl]="ageFormGroup" editable>
+        <form [formGroup]="ageFormGroup">
+          <h4 class="question mt-5">{{'qst11' | translate}}</h4>
+          <div class="container mt-5">
+            <div class="row justify-content-center mt-5">
+              <div class="col-lg-8 col-sm-12 container">
+                <div class="row justify-content-around">
+                  <div class="col-lg-12 col-sm-12 d-flex justify-content-between answer-radio">
+                    <div class="input-group">
+                      <input id="age-input" type="number" class="form-control myInput" placeholder="15 - 110"
+                        formControlName="age" min="15" max="110">
+                      <div class="input-group-append">
+                        <span class="input-group-text myAddon" id="age-addon">{{'year' | translate}}</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row justify-content-between justify-content-sm-center mt-5">
+              <div class="col-4 d-flex justify-content-sm-start justify-content-end mt-5">
+                <button class="btn btn-form" (click)="goBack(stepper)" [hidden]="stepper.selectedIndex === 0">{{'previous' | translate}}</button>
+              </div>
+              <div class="col-4 d-flex justify-content-sm-end justify-content-start mt-5">
+                <button class="btn btn-form" (click)="goForward(stepper)"
+                  [hidden]="stepper.selectedIndex === totalStepsCount-1" [disabled]="!ageFormGroup.valid">{{'next' | translate}}</button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </mat-step>
+      <mat-step [stepControl]="weightFormGroup" editable>
+        <form [formGroup]="weightFormGroup">
+          <h4 class="question mt-5">{{'qst12' | translate}}</h4>
+          <div class="container mt-5">
+            <div class="row justify-content-center mt-5">
+              <div class="col-lg-8 col-sm-12 container">
+                <div class="row justify-content-around">
+                  <div class="col-lg-12 col-sm-12 d-flex justify-content-between answer-radio">
+                    <div class="input-group">
+                      <input id="weight-input" type="number" class="form-control myInput" placeholder="20 - 250" min="20" max="250"
+                        formControlName="weight">
+                      <div class="input-group-append">
+                        <span class="input-group-text myAddon" id="weight-addon">{{'kg' | translate}}</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row justify-content-between justify-content-sm-center mt-5">
+              <div class="col-4 d-flex justify-content-sm-start justify-content-end mt-5">
+                <button class="btn btn-form" (click)="goBack(stepper)" [hidden]="stepper.selectedIndex === 0">{{'previous' | translate}}</button>
+              </div>
+              <div class="col-4 d-flex justify-content-sm-end justify-content-start mt-5">
+                <button class="btn btn-form" (click)="goForward(stepper)"
+                  [hidden]="stepper.selectedIndex === totalStepsCount-1" [disabled]="!weightFormGroup.valid">{{'next' | translate}}</button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </mat-step>
+      <mat-step [stepControl]="heightFormGroup" editable>
+        <form [formGroup]="heightFormGroup">
+          <h4 class="question mt-5">{{'qst13' | translate}}</h4>
+          <div class="container mt-5">
+            <div class="row justify-content-center mt-5">
+              <div class="col-lg-8 col-sm-12 container">
+                <div class="row justify-content-around">
+                  <div class="col-lg-12 col-sm-12 d-flex justify-content-between answer-radio">
+                    <div class="input-group">
+                      <input id="height-input" type="number" class="form-control myInput" placeholder="80 - 250" min="80" max="250"
+                        formControlName="height">
+                      <div class="input-group-append">
+                        <span class="input-group-text myAddon" id="height-addon">{{'cm' | translate}}</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row justify-content-between justify-content-sm-center mt-5">
+              <div class="col-4 d-flex justify-content-sm-start justify-content-end mt-5">
+                <button class="btn btn-form" (click)="goBack(stepper)" [hidden]="stepper.selectedIndex === 0">{{'previous' | translate}}</button>
+              </div>
+              <div class="col-4 d-flex justify-content-sm-end justify-content-start mt-5">
+                <button class="btn btn-form" (click)="goForward(stepper)"
+                  [hidden]="stepper.selectedIndex === totalStepsCount-1" [disabled]="!heightFormGroup.valid">{{'next' | translate}}</button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </mat-step>
+      <mat-step [stepControl]="heartDiseaseFormGroup" editable>
+        <form [formGroup]="heartDiseaseFormGroup">
+          <h4 class="question mt-5">{{'qst14' | translate}}</h4>
+          <div class="container mt-5">
+            <div class="row justify-content-center mt-5">
+              <div class="col-lg-8 col-sm-12 container">
+                <div class="row justify-content-around">
+                  <div class="col-lg-6 col-sm-12 d-flex justify-content-between answer-radio">
+                    <input type="radio" id="radio21" [value]="true" name="heartDisease" formControlName="heartDisease">
+                    <label for="radio21">
+                      <i class="fas fa-check"></i>
+                      <span>{{'yes' | translate}}</span>
+                    </label>
+                    <input type="radio" id="radio22" [value]="false" name="heartDisease" formControlName="heartDisease">
+                    <label for="radio22">
+                      <i class="fas fa-times"></i>
+                      <span>{{'no' | translate}}</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row justify-content-between justify-content-sm-center mt-5">
+              <div class="col-4 d-flex justify-content-sm-start justify-content-end mt-5">
+                <button class="btn btn-form" (click)="goBack(stepper)" [hidden]="stepper.selectedIndex === 0">{{'previous' | translate}}</button>
+              </div>
+              <div class="col-4 d-flex justify-content-sm-end justify-content-start mt-5">
+                <button class="btn btn-form" (click)="goForward(stepper)"
+                  [hidden]="stepper.selectedIndex === totalStepsCount-1"
+                  [disabled]="!heartDiseaseFormGroup.valid">{{'next' | translate}}</button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </mat-step>
+      <mat-step [stepControl]="diabetesFormGroup" editable>
+        <form [formGroup]="diabetesFormGroup">
+          <h4 class="question mt-5">{{'qst15' | translate}}</h4>
+          <div class="container mt-5">
+            <div class="row justify-content-center mt-5">
+              <div class="col-lg-8 col-sm-12 container">
+                <div class="row justify-content-around">
+                  <div class="col-lg-6 col-sm-12 d-flex justify-content-between answer-radio">
+                    <input type="radio" id="radio23" [value]="true" name="diabetes" formControlName="diabetes">
+                    <label for="radio23">
+                      <i class="fas fa-check"></i>
+                      <span>{{'yes' | translate}}</span>
+                    </label>
+                    <input type="radio" id="radio24" [value]="false" name="diabetes" formControlName="diabetes">
+                    <label for="radio24">
+                      <i class="fas fa-times"></i>
+                      <span>{{'no' | translate}}</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row justify-content-between justify-content-sm-center mt-5">
+              <div class="col-4 d-flex justify-content-sm-start justify-content-end mt-5">
+                <button class="btn btn-form" (click)="goBack(stepper)" [hidden]="stepper.selectedIndex === 0">{{'previous' | translate}}</button>
+              </div>
+              <div class="col-4 d-flex justify-content-sm-end justify-content-start mt-5">
+                <button class="btn btn-form" (click)="goForward(stepper)"
+                  [hidden]="stepper.selectedIndex === totalStepsCount-1" [disabled]="!diabetesFormGroup.valid">{{'next' | translate}}</button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </mat-step>
+      <mat-step [stepControl]="cancerFormGroup" editable>
+        <form [formGroup]="cancerFormGroup">
+          <h4 class="question mt-5">{{'qst16' | translate}}</h4>
+          <div class="container mt-5">
+            <div class="row justify-content-center mt-5">
+              <div class="col-lg-8 col-sm-12 container">
+                <div class="row justify-content-around">
+                  <div class="col-lg-6 col-sm-12 d-flex justify-content-between answer-radio">
+                    <input type="radio" id="radio25" [value]="true" name="cancer" formControlName="cancer">
+                    <label for="radio25">
+                      <i class="fas fa-check"></i>
+                      <span>{{'yes' | translate}}</span>
+                    </label>
+                    <input type="radio" id="radio26" [value]="false" name="cancer" formControlName="cancer">
+                    <label for="radio26">
+                      <i class="fas fa-times"></i>
+                      <span>{{'no' | translate}}</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row justify-content-between justify-content-sm-center mt-5">
+              <div class="col-4 d-flex justify-content-sm-start justify-content-end mt-5">
+                <button class="btn btn-form" (click)="goBack(stepper)" [hidden]="stepper.selectedIndex === 0">{{'previous' | translate}}</button>
+              </div>
+              <div class="col-4 d-flex justify-content-sm-end justify-content-start mt-5">
+                <button class="btn btn-form" (click)="goForward(stepper)"
+                  [hidden]="stepper.selectedIndex === totalStepsCount-1" [disabled]="!cancerFormGroup.valid">{{'next' | translate}}</button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </mat-step>
+      <mat-step [stepControl]="breathingIllnessFormGroup" editable>
+        <form [formGroup]="breathingIllnessFormGroup">
+          <h4 class="question mt-5">{{'qst17' | translate}}</h4>
+          <div class="container mt-5">
+            <div class="row justify-content-center mt-5">
+              <div class="col-lg-8 col-sm-12 container">
+                <div class="row justify-content-around">
+                  <div class="col-lg-6 col-sm-12 d-flex justify-content-between answer-radio">
+                    <input type="radio" id="radio27" [value]="true" name="breathingIllness"
+                      formControlName="breathingIllness">
+                    <label for="radio27">
+                      <i class="fas fa-check"></i>
+                      <span>{{'yes' | translate}}</span>
+                    </label>
+                    <input type="radio" id="radio28" [value]="false" name="breathingIllness"
+                      formControlName="breathingIllness">
+                    <label for="radio28">
+                      <i class="fas fa-times"></i>
+                      <span>{{'no' | translate}}</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row justify-content-between justify-content-sm-center mt-5">
+              <div class="col-4 d-flex justify-content-sm-start justify-content-end mt-5">
+                <button class="btn btn-form" (click)="goBack(stepper)" [hidden]="stepper.selectedIndex === 0">{{'previous' | translate}}</button>
+              </div>
+              <div class="col-4 d-flex justify-content-sm-end justify-content-start mt-5">
+                <button class="btn btn-form" (click)="goForward(stepper)"
+                  [hidden]="stepper.selectedIndex === totalStepsCount-1"
+                  [disabled]="!breathingIllnessFormGroup.valid">{{'next' | translate}}</button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </mat-step>
+      <mat-step [stepControl]="chronicRenalFailureFormGroup" editable>
+        <form [formGroup]="chronicRenalFailureFormGroup">
+          <h4 class="question mt-5">{{'qst18' | translate}}</h4>
+          <div class="container mt-5">
+            <div class="row justify-content-center mt-5">
+              <div class="col-lg-8 col-sm-12 container">
+                <div class="row justify-content-around">
+                  <div class="col-lg-6 col-sm-12 d-flex justify-content-between answer-radio">
+                    <input type="radio" id="radio29" [value]="true" name="chronicRenalFailure"
+                      formControlName="chronicRenalFailure">
+                    <label for="radio29">
+                      <i class="fas fa-check"></i>
+                      <span>{{'yes' | translate}}</span>
+                    </label>
+                    <input type="radio" id="radio30" [value]="false" name="chronicRenalFailure"
+                      formControlName="chronicRenalFailure">
+                    <label for="radio30">
+                      <i class="fas fa-times"></i>
+                      <span>{{'no' | translate}}</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row justify-content-between justify-content-sm-center mt-5">
+              <div class="col-4 d-flex justify-content-sm-start justify-content-end mt-5">
+                <button class="btn btn-form" (click)="goBack(stepper)" [hidden]="stepper.selectedIndex === 0">{{'previous' | translate}}</button>
+              </div>
+              <div class="col-4 d-flex justify-content-sm-end justify-content-start mt-5">
+                <button class="btn btn-form" (click)="goForward(stepper)"
+                  [hidden]="stepper.selectedIndex === totalStepsCount-1"
+                  [disabled]="!chronicRenalFailureFormGroup.valid">{{'next' | translate}}</button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </mat-step>
+      <mat-step [stepControl]="chronicLiverDiseaseFormGroup" editable>
+        <form [formGroup]="chronicLiverDiseaseFormGroup">
+          <h4 class="question mt-5">{{'qst19' | translate}}</h4>
+          <div class="container mt-5">
+            <div class="row justify-content-center mt-5">
+              <div class="col-lg-8 col-sm-12 container">
+                <div class="row justify-content-around">
+                  <div class="col-lg-6 col-sm-12 d-flex justify-content-between answer-radio">
+                    <input type="radio" id="radio31" [value]="true" name="chronicLiverDisease"
+                      formControlName="chronicLiverDisease">
+                    <label for="radio31">
+                      <i class="fas fa-check"></i>
+                      <span>{{'yes' | translate}}</span>
+                    </label>
+                    <input type="radio" id="radio32" [value]="false" name="chronicLiverDisease"
+                      formControlName="chronicLiverDisease">
+                    <label for="radio32">
+                      <i class="fas fa-times"></i>
+                      <span>{{'no' | translate}}</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row justify-content-between justify-content-sm-center mt-5">
+              <div class="col-4 d-flex justify-content-sm-start justify-content-end mt-5">
+                <button class="btn btn-form" (click)="goBack(stepper)" [hidden]="stepper.selectedIndex === 0">{{'previous' | translate}}</button>
+              </div>
+              <div class="col-4 d-flex justify-content-sm-end justify-content-start mt-5">
+                <button class="btn btn-form" (click)="goForward(stepper)"
+                  [hidden]="stepper.selectedIndex === totalStepsCount-1"
+                  [disabled]="!chronicLiverDiseaseFormGroup.valid">{{'next' | translate}}</button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </mat-step>
+      <mat-step [stepControl]="pregnancyFormGroup" editable>
+        <form [formGroup]="pregnancyFormGroup">
+          <h4 class="question mt-5">{{'qst20' | translate}}</h4>
+          <div class="container mt-5">
+            <div class="row justify-content-center mt-5">
+              <div class="col-lg-8 col-sm-12 container">
+                <div class="row justify-content-around">
+                  <div class="col-lg-8 col-sm-12 d-flex justify-content-between answer-radio">
+                    <input type="radio" id="radio33" [value]="true" name="pregnancy" formControlName="pregnancy">
+                    <label for="radio33">
+                      <i class="fas fa-check"></i>
+                      <span>{{'yes' | translate}}</span>
+                    </label>
+                    <input type="radio" id="radio34" [value]="false" name="pregnancy" formControlName="pregnancy">
+                    <label for="radio34">
+                      <i class="fas fa-times"></i>
+                      <span>{{'no' | translate}}</span>
+                    </label>
+                    <input type="radio" id="radio39" value="man" name="pregnancy" formControlName="pregnancy">
+                    <label for="radio39">
+                      <i class="fas fa-male"></i>
+                      <span>{{'man' | translate}}</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row justify-content-between justify-content-sm-center mt-5">
+              <div class="col-4 d-flex justify-content-sm-start justify-content-end mt-5">
+                <button class="btn btn-form" (click)="goBack(stepper)" [hidden]="stepper.selectedIndex === 0">{{'previous' | translate}}</button>
+              </div>
+              <div class="col-4 d-flex justify-content-sm-end justify-content-start mt-5">
+                <button class="btn btn-form" (click)="goForward(stepper)"
+                  [hidden]="stepper.selectedIndex === totalStepsCount-1" [disabled]="!pregnancyFormGroup.valid">{{'next' | translate}}</button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </mat-step>
+      <mat-step [stepControl]="immuneSystemDiseaseFormGroup" editable>
+        <form [formGroup]="immuneSystemDiseaseFormGroup">
+          <h4 class="question mt-5">{{'qst21' | translate}}</h4>
+          <div class="container mt-5">
+            <div class="row justify-content-center mt-5">
+              <div class="col-lg-8 col-sm-12 container">
+                <div class="row justify-content-around">
+                  <div class="col-lg-6 col-sm-12 d-flex justify-content-between answer-radio">
+                    <input type="radio" id="radio35" [value]="true" name="immuneSystemDisease"
+                      formControlName="immuneSystemDisease">
+                    <label for="radio35">
+                      <i class="fas fa-check"></i>
+                      <span>{{'yes' | translate}}</span>
+                    </label>
+                    <input type="radio" id="radio36" [value]="false" name="immuneSystemDisease"
+                      formControlName="immuneSystemDisease">
+                    <label for="radio36">
+                      <i class="fas fa-times"></i>
+                      <span>{{'no' | translate}}</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row justify-content-between justify-content-sm-center mt-5">
+              <div class="col-4 d-flex justify-content-sm-start justify-content-end mt-5">
+                <button class="btn btn-form" (click)="goBack(stepper)" [hidden]="stepper.selectedIndex === 0">{{'previous' | translate}}</button>
+              </div>
+              <div class="col-4 d-flex justify-content-sm-end justify-content-start mt-5">
+                <button class="btn btn-form" (click)="goForward(stepper)"
+                  [hidden]="stepper.selectedIndex === totalStepsCount-1"
+                  [disabled]="!immuneSystemDiseaseFormGroup.valid">{{'next' | translate}}</button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </mat-step>
+      <mat-step [stepControl]="immunosuppressiveTherapyFormGroup" editable>
+        <form [formGroup]="immunosuppressiveTherapyFormGroup">
+          <h4 class="question mt-5">{{'qst22' | translate}}</h4>
+          <div class="container mt-5">
+            <div class="row justify-content-center mt-5">
+              <div class="col-lg-8 col-sm-12 container">
+                <div class="row justify-content-around">
+                  <div class="col-lg-6 col-sm-12 d-flex justify-content-between answer-radio">
+                    <input type="radio" id="radio37" [value]="true" name="immunosuppressiveTherapy"
+                      formControlName="immunosuppressiveTherapy">
+                    <label for="radio37">
+                      <i class="fas fa-check"></i>
+                      <span>{{'yes' | translate}}</span>
+                    </label>
+                    <input type="radio" id="radio38" [value]="false" name="immunosuppressiveTherapy"
+                      formControlName="immunosuppressiveTherapy">
+                    <label for="radio38">
+                      <i class="fas fa-times"></i>
+                      <span>{{'no' | translate}}</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row justify-content-between justify-content-sm-center mt-5">
+              <div class="col-4 d-flex justify-content-sm-start justify-content-end mt-5">
+                <button class="btn btn-form" (click)="goBack(stepper)" [hidden]="stepper.selectedIndex === 0">{{'previous' | translate}}</button>
+              </div>
+              <div class="col-4 d-flex justify-content-sm-end justify-content-start mt-5">
+                <button class="btn btn-form"
+                  [disabled]="!immunosuppressiveTherapyFormGroup.valid" (click)="saveAnswers()">ننهي الإختبار</button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </mat-step>
+    </mat-horizontal-stepper>
+  </div>
+  <!-- <div class="card-footer">
+    <button class="btn btn-primary float-right" (click)="goBack(stepper)" [hidden]="stepper.selectedIndex === 0">السؤال
+      لقبل</button>
+    <button class="btn btn-primary float-left" (click)="goForward(stepper)"
+      [hidden]="stepper.selectedIndex === totalStepsCount-1">السؤال التالي</button>
+  </div> -->
+</div>

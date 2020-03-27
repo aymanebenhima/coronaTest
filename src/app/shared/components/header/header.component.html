@@ -1,0 +1,30 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light" id="navbar">
+  <a class="navbar-brand" routerLink="/">
+    <img id="navbar-logo" src="assets/imgs/logo__sante.png" alt="logo de la ministère de la santé">
+  </a>
+  <div class="d-flex ml-auto">
+    <a id="lang-mobile" class="mx-3 my-auto">
+      <div class="flag-icon-background flag-icon-fr"> </div>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+      aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </div>
+
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+    <ul class="navbar-nav ml-auto mt-2 mt-lg-0" id="navbar-items">
+      <li class="nav-item lang mx-2" id="lang-large">
+        <a class="nav-link">
+          <div class="flag-icon-background flag-icon-ma"> </div>
+        </a>
+      </li>
+      <li class="nav-item" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+        <a class="nav-link" routerLink="/">{{'menuHome' | translate}}</a>
+      </li>
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link" routerLink="/conseils">{{'menuAdvice' | translate}}</a>
+      </li>
+    </ul>
+  </div>
+</nav>

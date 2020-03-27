@@ -1,0 +1,462 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en-US" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="lang1" datatype="html">
+        <source>كفاش نحمي راسي و ناس لمعايا بشكل يومي؟</source>
+        <target>Comment se protéger et protéger les autres au quotidien ?</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/advice/advice.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="lang2" datatype="html">
+        <source>نجتانب تسلام او المصافحة</source>
+        <target>Saluez sans serrer la main, n'embrassez personne</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/advice/advice.component.html</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="lang3" datatype="html">
+        <source>غسل يديك بانتظام</source>
+        <target>Lavez-vous très régulièrement les mains</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/advice/advice.component.html</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="lang4" datatype="html">
+        <source>إذا كنت مريض لبس قناع طبي</source>
+        <target>Portez un masque si vous êtes malade</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/advice/advice.component.html</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="lang5" datatype="html">
+        <source>نعطس و لا نكحب في المرفق أو في المنديل</source>
+        <target>Toussez ou éternuez dans votre coude ou dans un mouchoir</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/advice/advice.component.html</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="lang6" datatype="html">
+        <source>استخدم منديل مرة وحدة و نرميه</source>
+        <target>Utilisez un mouchoir à usage unique et jetez-le</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/advice/advice.component.html</context>
+          <context context-type="linenumber">27</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="lang7" datatype="html">
+        <source>عقم مكان ديالك</source>
+        <target>Désinfection de votre emplacement</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/advice/advice.component.html</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="lang8" datatype="html">
+        <source>ابق في دارك ، اجتنب اي إختلاط مع الآخرين</source>
+        <target>Restez chez vous, évitez tout contact avec les autres</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/advice/advice.component.html</context>
+          <context context-type="linenumber">38</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="lang9" datatype="html">
+        <source>معلومات</source>
+        <target>Informations</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/advice/advice.component.html</context>
+          <context context-type="linenumber">47</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="lang10" datatype="html">
+        <source>توصل بجميع البيانات والإحصائيات المتعلقة بالحالة الوبائية في المغرب على البوابة الرسمية</source>
+        <target>Obtenez des informations à jour en provenance de Gouvernement.fr</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/advice/advice.component.html</context>
+          <context context-type="linenumber">51</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="lang11" datatype="html">
+        <source>معلومات خاصك تعرفه</source>
+        <target>Informations utiles</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/advice/advice.component.html</context>
+          <context context-type="linenumber">54</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="lang12" datatype="html">
+        <source>شنو هي الأعراض لواجب الانتباه ليها؟</source>
+        <target>Quels sont les symptômes à surveiller ?</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/advice/advice.component.html</context>
+          <context context-type="linenumber">68</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/home/home.component.html</context>
+          <context context-type="linenumber">32</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="lang13" datatype="html">
+        <source>الحمى</source>
+        <target>Fièvre</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/advice/advice.component.html</context>
+          <context context-type="linenumber">74</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/home/home.component.html</context>
+          <context context-type="linenumber">38</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="lang14" datatype="html">
+        <source>تعب غير عادي</source>
+        <target>Fatigue inhabituelle</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/advice/advice.component.html</context>
+          <context context-type="linenumber">78</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/home/home.component.html</context>
+          <context context-type="linenumber">42</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="lang15" datatype="html">
+        <source>تغذية صعبة</source>
+        <target>Alimentation difficile</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/advice/advice.component.html</context>
+          <context context-type="linenumber">82</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/home/home.component.html</context>
+          <context context-type="linenumber">46</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="lang16" datatype="html">
+        <source>ضيق في التنفس</source>
+        <target>Gêne respiratoire</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/advice/advice.component.html</context>
+          <context context-type="linenumber">86</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/home/home.component.html</context>
+          <context context-type="linenumber">50</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="lang17" datatype="html">
+        <source>السعال و التهاب الحلق</source>
+        <target>Toux et maux de gorge</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/advice/advice.component.html</context>
+          <context context-type="linenumber">90</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/home/home.component.html</context>
+          <context context-type="linenumber">54</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="lang18" datatype="html">
+        <source>الأوجاع</source>
+        <target>Courbatures</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/advice/advice.component.html</context>
+          <context context-type="linenumber">94</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/home/home.component.html</context>
+          <context context-type="linenumber">58</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="lang19" datatype="html">
+        <source>فيروس كورونا المستجد كيفاش كينتقل</source>
+        <target>Le Coronavirus COVID-19 se transmet</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/advice/advice.component.html</context>
+          <context context-type="linenumber">99</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="lang20" datatype="html">
+        <source>عن طريق إسقاط اللعاب</source>
+        <target>Par la projection de gouttelettes en postillonnant</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/advice/advice.component.html</context>
+          <context context-type="linenumber">105</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="lang21" datatype="html">
+        <source>وجها لوجه لمدة 15 دقيقة على الأقل</source>
+        <target>Face à face pendant au moins 15 min</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/advice/advice.component.html</context>
+          <context context-type="linenumber">109</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="lang22" datatype="html">
+        <source>التوصيات الرسمية</source>
+        <target>Recommandations officielles</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/advice/advice.component.html</context>
+          <context context-type="linenumber">119</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/home/home.component.html</context>
+          <context context-type="linenumber">68</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="lang23" datatype="html">
+        <source>اتصل مجانًا</source>
+        <target>Appel gratuit</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/advice/advice.component.html</context>
+          <context context-type="linenumber">124</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/home/home.component.html</context>
+          <context context-type="linenumber">73</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="lang24" datatype="html">
+        <source>إذا كنت كتظن انك مريض، فمن الاحسن</source>
+        <target>Si vous pensez être malade, nous vous conseillons de</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/advice/advice.component.html</context>
+          <context context-type="linenumber">129</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/home/home.component.html</context>
+          <context context-type="linenumber">78</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="lang25" datatype="html">
+        <source>تبعد من البلايص العمومية.</source>
+        <target>Evitez les endroits publics.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/advice/advice.component.html</context>
+          <context context-type="linenumber">131</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/home/home.component.html</context>
+          <context context-type="linenumber">80</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="lang26" datatype="html">
+        <source>ماتزورش الناس الضعفاء ( الناس الكبار أو المرضى ).</source>
+        <target>Ne rendez pas visite aux personnes fragiles.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/advice/advice.component.html</context>
+          <context context-type="linenumber">132</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/home/home.component.html</context>
+          <context context-type="linenumber">81</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="lang27" datatype="html">
+        <source>بقى فدارك.</source>
+        <target>Restez chez vous</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/advice/advice.component.html</context>
+          <context context-type="linenumber">133</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/home/home.component.html</context>
+          <context context-type="linenumber">82</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="lang28" datatype="html">
+        <source>التزم التعليمات المفروضة ( غسل يديك، ارتدي الماسك فحالة حسيتي بالأعراض ).</source>
+        <target>Respectez les mesures barrière (lavage de main, masque).</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/advice/advice.component.html</context>
+          <context context-type="linenumber">134</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/home/home.component.html</context>
+          <context context-type="linenumber">83</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="lang29" datatype="html">
+        <source>راقب الأعراض ديالك و التغيرات فدرجة حرارة الجسم ديالك.</source>
+        <target>Surveillez vos symptômes, l’évolution de votre température corporelle et recherchez un avis médical.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/advice/advice.component.html</context>
+          <context context-type="linenumber">135</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/home/home.component.html</context>
+          <context context-type="linenumber">84</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="lang30" datatype="html">
+        <source>واش كتضن انك تعرضت لفيروس كورونا المستجد و عندك الأعراض ديالها؟</source>
+        <target>Vous pensez avoir été exposé au Coronavirus COVID-19 et avez des symptômes ?</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/advice/advice.component.html</context>
+          <context context-type="linenumber">146</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/home/home.component.html</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/home/home.component.html</context>
+          <context context-type="linenumber">95</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="lang31" datatype="html">
+        <source>نبداو الاختبار</source>
+        <target>Démarrer le test</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/advice/advice.component.html</context>
+          <context context-type="linenumber">148</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/home/home.component.html</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/home/home.component.html</context>
+          <context context-type="linenumber">97</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="lang32" datatype="html">
+        <source>
+      Oopps! La page que vous recherchez n&apos;existe pas.
+    </source>
+        <target>Oopps! La page que vous recherchez n&apos;existe pas.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/page-not-found/page-not-found.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="lang33" datatype="html">
+        <source>Aller à la page d&apos;accueil</source>
+        <target>Aller à la page d&apos;accueil</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/page-not-found/page-not-found.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="lang34" datatype="html">
+        <source>أخِر الأخبار الطبية</source>
+        <target>LA DERNIÈRE INFO MÉDICALE</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/home/home.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="lang35" datatype="html">
+        <source>فاش كناخدو الأدوية المضادة للالتهابات ( الإيبوبروفين والكورتيزون..... ) تقدر تكون سبب في زيادة المرض، إلى كانت فيك السخانة خود الباراسيتامول. <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>إلى كنت تحت علاج بالأدوية المضادة للالتهابات، فمن الأفضل تستاشر مع الطبيب.</source>
+        <target>La prise d'anti-inflammatoires (ibuprofène, cortisone ...) pourrait être un facteur d'aggravation de l’infection. En cas de fièvre, prenez du paracétamol. <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>N'arrêtez pas votre traitement ! Consultez votre médecin ou votre pharmacien.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/home/home.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="lang36" datatype="html">
+        <source>نبقا راد لبال؟ <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>نستاشر عبر الهاتف مع الجهات المعنية؟ <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>نعيط ل 141؟ <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>دير الاختباروفقًا للأعراض ديالك باش ترتاح</source>
+        <target>Je reste vigilant ? <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>Je programme une téléconsultation ? <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>J'appelle le 15 ?<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>Faites le test pour répondre en citoyen éclairé selon vos symptômes.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/modules/home/home.component.html</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="lang37" datatype="html">
+        <source>
+            فرنسي
+            <x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i&gt;"/><x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/>
+          </source>
+        <target>
+        عربي
+        </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/header/header.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="lang38" datatype="html">
+        <source>الرئيسية</source>
+        <target>Accueil</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/header/header.component.html</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="lang39" datatype="html">
+        <source>نصائح</source>
+        <target>Conseils</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/header/header.component.html</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="lang40" datatype="html">
+        <source>اتصالات مفيدة</source>
+        <target>Contacts utiles</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/footer/footer.component.html</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="lang41" datatype="html">
+        <source>الرقم الاقتصادي &quot;ألو اليقضة الوبائية&quot;</source>
+        <target> Numéro économique &quot;Allo veille épidémiologique&quot;</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/footer/footer.component.html</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="lang42" datatype="html">
+        <source>للمساعدة الطبية الاستعجالية</source>
+        <target>Aide médicale urgente</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/footer/footer.component.html</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="lang43" datatype="html">
+        <source><x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>الرئيسية<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/></source>
+        <target><x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>Accueil<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/footer/footer.component.html</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="lang44" datatype="html">
+        <source><x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>نصائح<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/></source>
+        <target>
+        <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>
+        Conseils
+        <x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>
+        </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/footer/footer.component.html</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="lang45" datatype="html">
+        <source>
+              <x id="START_TAG_BUTTON" ctype="x-button" equiv-text="&lt;button&gt;"/>
+                français
+              <x id="CLOSE_TAG_BUTTON" ctype="x-button" equiv-text="&lt;/button&gt;"/>
+            </source>
+        <target>
+        <x id="START_TAG_BUTTON" ctype="x-button" equiv-text="&lt;button&gt;"/>
+        عربي
+        <x id="CLOSE_TAG_BUTTON" ctype="x-button" equiv-text="&lt;/button&gt;"/>
+        </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/footer/footer.component.html</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

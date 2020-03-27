@@ -1,0 +1,148 @@
+::ng-deep #formStepper .mat-horizontal-stepper-header-container {
+  display: none !important;
+}
+
+::ng-deep #formProgressBar .mat-progress-bar-fill::after {
+  background-color: #1078AD;
+}
+
+::ng-deep #formProgressBar .mat-progress-bar-buffer {
+  background: #E6F1F7;
+}
+
+::ng-deep #formProgressBar .mat-progress-bar {
+  height: 10px !important;
+  border-radius: 7px !important;
+  margin-right: 10px;
+}
+
+#formProgressBar span {
+  font-family: 'Cairo', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #222222;
+}
+
+/* FORM ITEMS */
+
+h4.question {
+  padding-top: 20px;
+  color: #787878;
+  font-family: 'Cairo', sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 100px;
+  text-align: center;
+  line-height: 45px;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+label {
+  width: 120px;
+  height: 80px;
+  border-radius: 5px;
+  border: 3px solid #1078AD;
+  position: relative;
+  color: #1078AD;
+  font-family: 'Cairo', sans-serif;
+  font-weight: 500;
+  transition: .5s;
+}
+
+.fas,
+.far {
+  font-size: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -100%);
+}
+
+label>span {
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 30%);
+}
+
+input[type="radio"]:checked+label {
+  background-color: #1078AD;
+  color: #F4CF1B;
+}
+
+.btn-form {
+  font-family: 'Cairo', sans-serif;
+  border: 2px solid #1078AD;
+  background-color: rgba(16, 121, 173, 0.2);
+  color: #1078AD;
+  transition: .2s;
+}
+
+.btn-form:not(:disabled):hover {
+  border: 2px solid #1078AD;
+  background-color: #1078AD;
+  color: #fff;
+}
+
+.btn-form:disabled:hover {
+  cursor: not-allowed;
+}
+
+.myInput {
+  border: 0.5px solid #1078AD;
+  border-radius: 0;
+  font-family: 'Cairo', sans-serif;
+}
+
+.myAddon {
+  border: 0.5px solid #1078AD;
+  border-radius: 0;
+  background-color: rgba(77, 163, 206, 0.1);
+  font-family: 'Cairo', sans-serif;
+}
+
+@media (max-width: 575.98px) {
+  h4.question {
+    font-size: 13px;
+    font-weight: 700;
+    margin-bottom: 100px;
+    text-align: center;
+    line-height: 35px;
+  }
+
+  label {
+    width: 60px;
+    height: 80px;
+    border: 2px solid #1078AD;
+  }
+
+  .fas,
+  .far {
+    font-size: 15px;
+  }
+
+  label>span {
+    font-size: 15px;
+    font-weight: 700;
+  }
+}
+
+/* .ng-dirty.ng-valid:not(form) {
+  /* box-shadow: inset 0 0 3px 1px #026533; 
+  background-color: #0265332f;
+  color: #026533;
+} */
+
+.ng-dirty.ng-invalid:not(form) {
+  /* box-shadow: inset 0 0 3px 1px #a94442; */
+  background-color: #a9444231;
+  color: #a94442;
+}
+
+.ng-touched:not(form) {
+    box-shadow: none;
+}

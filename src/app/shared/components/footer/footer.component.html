@@ -1,0 +1,38 @@
+<footer>
+  <section id="logo-ministere">
+    <div class="container">
+      <div class="row">
+        <div class="col-12" id="footer-logo-container">
+          <img src="assets/imgs/logo__sante.png" alt="logo de la ministère de la santé"
+            id="footer-logo-sante">
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="app-footer">
+    <div class="container section-container">
+      <div class="d-flex justify-content-around align-items-lg-center align-items-sm-start">
+        <div class="col-lg-4 col-sm-6" id="footer-contacts">
+          <h2 dir="rtl">{{'footerTitle' | translate}}</h2>
+          <p dir="rtl">{{'footerCall1' | translate}}</p>
+          <h5>080 100 47 47</h5>
+          <p dir="rtl">{{'footerCall2' | translate}}</p>
+          <h5>141</h5>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <ul class="list-group list-group-flush" id="footer-links">
+            <li class="list-group-item" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }"><a routerLink="/" dir="rtl">{{'menuHome' | translate}}</a></li>
+            <li class="list-group-item" routerLinkActive="active"><a routerLink="/conseils" dir="rtl">{{'menuAdvice' | translate}}</a></li>
+            <!-- <li class="list-group-item">
+              <button class="btn btn-outline-light btn-sm btn-block" id="footer-lang-btn">
+                français
+              </button>
+            </li> -->
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+</footer>
+
+<div id="bottom-line"></div>

@@ -1,0 +1,117 @@
+#navbar {
+    background-color: #1078AD;
+    background-image: url("~/assets/imgs/navbar-bg.png");
+    padding: 0px 5vw;
+}
+
+#navbar-logo {
+    height: 50px;
+    width: auto;
+    vertical-align: middle;
+}
+
+#navbar-items {
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.nav-item {
+    padding: 0 10px;
+}
+
+.nav-item:hover {
+    cursor: pointer;
+}
+
+.nav-link {
+    color: #2B2B2C !important;
+    font-family: 'Cairo', sans-serif;
+    font-size: 20px;
+}
+
+.nav-link:hover {
+    color: #1078AD !important;
+    font-family: 'Cairo', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.active a {
+    color: #1078AD !important;
+    font-weight: 900;
+}
+
+/* #lang-item div {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    color: #1078AD;
+    font-family: 'Cairo', sans-serif;
+    border: 1.2px solid #1078AD;
+    transition: .2s;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+}
+
+#lang-item button:hover {
+    color: #fff;
+    font-family: 'Cairo', sans-serif;
+    border: 1.2px solid #1078AD;
+    background: #1078AD;
+} */
+
+.flag-icon-background {
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    background-size: 35px;
+    background-position: center center;
+}
+
+#lang-mobile {
+    display: none;
+}
+
+#globe-icon {
+    color: #F4CF1B;
+    margin-left: 7px;
+}
+
+@media (max-width: 575.98px) {
+    #navbar-items {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* #lang-item {
+        order: 4;
+        border-bottom: 0;
+    }
+
+    #lang-item button {
+        display: block;
+        width: 100%;
+    } */
+
+    #lang-large {
+        display: none;
+    }
+
+    #lang-mobile {
+        display: block;
+    }
+
+    .nav-item {
+        padding: 6px;
+        width: 95%;
+        text-align: center;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    }
+
+    .navbar-collapse {
+        padding-bottom: 20px;
+    }
+}
