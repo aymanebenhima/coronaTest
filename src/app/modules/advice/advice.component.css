@@ -146,6 +146,7 @@
   #symptoms-title {
     font-size: 30px;
   }
+  
 }
 
 /* ******************** */
@@ -293,5 +294,13 @@
 
   #rappel-container h2 {
     font-size: 24px;
+  }
+}
+
+@media (min-width: 575.98px){
+
+  #info button {
+    font-size: 24px;
+    width: 100%;
   }
 }
