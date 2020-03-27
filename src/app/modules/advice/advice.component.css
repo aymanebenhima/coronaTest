@@ -1,5 +1,6 @@
 * {
   font-family: 'Cairo', sans-serif !important;
+  direction : ltr !important;
 }
 
 #info {
@@ -152,6 +153,7 @@
 #recommandations {
   background-color: #1078AD;
   padding-bottom: 30px;
+  
 }
 
 #recommandations-title {
@@ -166,7 +168,7 @@
 #recomm-items p {
   font-size: 20px;
   font-weight: 700;
-  text-align: right;
+  text-align: center;
   color: #fff;
 }
 
@@ -177,7 +179,7 @@
 #recomm-items ul li {
   font-size: 19px;
   font-weight: 500;
-  text-align: right;
+  text-align: left;
   color: #fff;
   padding-bottom: 10px;
   list-style: none;

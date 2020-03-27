@@ -1,5 +1,6 @@
 * {
   font-family: 'Cairo', sans-serif;
+  direction:ltr !important;
 }
 
 #quiz-section {

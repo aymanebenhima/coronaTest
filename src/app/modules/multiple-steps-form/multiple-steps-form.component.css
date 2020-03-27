@@ -105,6 +105,27 @@ input[type="radio"]:checked+label {
   font-family: 'Cairo', sans-serif;
 }
 
+.custom {
+
+height:100px;
+
+}
+
+.answer-radio span{
+
+  text-align: center;
+}
+
+.answer-radio #ass{
+
+  bottom:27px;
+}
+
+.answer-radio #fat{
+
+  bottom:30px;
+}
+
 @media (max-width: 575.98px) {
   h4.question {
     font-size: 13px;

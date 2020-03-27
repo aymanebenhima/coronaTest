@@ -86,7 +86,7 @@
               "i18nFile": "src/locale/messages.fr.xlf",
               "i18nFormat": "xlf",
               "i18nLocale": "fr",
-              "i18nMissingTranslation": "error",
+              "i18nMissingTranslation": "error"
             },
             "production-ar": {
               "fileReplacements": [
@@ -116,7 +116,7 @@
               "i18nFile": "src/locale/messages.ar.xlf",
               "i18nFormat": "xlf",
               "i18nLocale": "ar",
-              "i18nMissingTranslation": "error",
+              "i18nMissingTranslation": "error"
             }
           }
         },
@@ -189,5 +189,8 @@
       }
     }
   },
-  "defaultProject": "covitest"
+  "defaultProject": "covitest",
+  "cli": {
+    "analytics": false
+  }
 }
